@@ -54,7 +54,12 @@ class projectController extends Controller
      */
     public function store(createProjectRequest $request)
     {
+
+
         if( !have_permission( '','','can_create_projects') ) return view('admin.access_error');
+
+
+
 
         $project = Project::create($request->all());
         $project->assignees()->sync($request->user_id);

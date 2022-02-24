@@ -13,7 +13,7 @@ class CreateUserIdColOnModulesTable extends Migration
     public function up()
     {
         Schema::table('modules', function (Blueprint $table) {
-            $table->integer('user_id')->unsigned()->index();
+            $table->integer('user_id')->nullable()->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users');
         });
     }

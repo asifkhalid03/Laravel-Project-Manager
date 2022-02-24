@@ -16,7 +16,7 @@ class CreateColumnsOnTasksTable extends Migration
             $table->string('title');
             $table->text('description');
 
-            $table->integer('user_id')->unsigned()->index();
+            $table->integer('user_id')->nullable()->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users');
 
             $table->integer('project_id')->unsigned()->index();

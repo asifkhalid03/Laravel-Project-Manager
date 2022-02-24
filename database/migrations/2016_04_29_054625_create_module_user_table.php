@@ -16,7 +16,7 @@ class CreateModuleUserTable extends Migration
             $table->integer('module_id')->unsigned()->index();
             $table->foreign('module_id')->references('id')->on('modules')->onDelete('cascade');
 
-            $table->integer('user_id')->unsigned()->index();
+            $table->integer('user_id')->nullable()->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();

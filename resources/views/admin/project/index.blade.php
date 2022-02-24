@@ -4,7 +4,7 @@
         <div class="col s12">
             <div class="row">
                 @foreach( $projects as $project )
-                    <div class="col s4">
+                    <div class="col s5">
                         <div class="card blue-grey">
                             <div class="card-content white-text">
                                 <div class="card-title">

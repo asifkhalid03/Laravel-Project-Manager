@@ -16,7 +16,7 @@ class CreateTasklistUserTable extends Migration
             $table->integer('tasklist_id')->unsigned()->index();
             $table->foreign('tasklist_id')->references('id')->on('tasklists')->onDelete('cascade');
 
-            $table->integer('user_id')->unsigned()->index();
+            $table->integer('user_id')->nullable()->unsigned()->index();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
 
             $table->timestamps();

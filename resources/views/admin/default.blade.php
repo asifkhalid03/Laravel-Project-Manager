@@ -39,7 +39,7 @@
         <nav class="blue-grey">
             <!-- /.navbar-header -->
             <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Krypton</a>
+                    <a href="#!" class="brand-logo">HyperSoftx</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="{{ url('admin/dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
                         <li>
@@ -75,17 +75,17 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="dropdown-button" data-activates="comment_dropdown"   href="{{ route('admin.comments.index') }}"><i class="fa fa-comment fa-fw"></i> Comments</a>
-                            <ul id="comment_dropdown" class="dropdown-content">
-                                <li>
-                                    <a href="{{ route('admin.comments.index') }}">All Comments</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route( 'admin.comments.create' ) }}">Add New Comment</a>
-                                </li>
-                            </ul>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a class="dropdown-button" data-activates="comment_dropdown"   href="{{ route('admin.comments.index') }}"><i class="fa fa-comment fa-fw"></i> Comments</a>--}}
+{{--                            <ul id="comment_dropdown" class="dropdown-content">--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route('admin.comments.index') }}">All Comments</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route( 'admin.comments.create' ) }}">Add New Comment</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                         <li>
                             <a class="dropdown-button" data-activates="role_dropdown"   href="{{ route('admin.roles.index') }}"><i class="fa fa-cut fa-fw"></i> Roles</a>
                             <ul id="role_dropdown" class="dropdown-content">
@@ -108,28 +108,28 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="dropdown-button" data-activates="file_dropdown"   href="{{ route('admin.files.index') }}"><i class="fa fa-file fa-fw"></i> Files</a>
-                            <ul id="file_dropdown" class="dropdown-content">
-                                <li>
-                                    <a href="{{ route('admin.files.index') }}">All Files</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route( 'admin.files.create' ) }}">Add New File</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="dropdown-button" data-activates="tag_dropdown"   href="{{ route('admin.tags.index') }}"><i class="fa fa-tag fa-fw"></i> Tags</a>
-                            <ul id="tag_dropdown" class="dropdown-content">
-                                <li>
-                                    <a href="{{ route('admin.tags.index') }}">All Tags</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route( 'admin.tags.create' ) }}">Add New Tag</a>
-                                </li>
-                            </ul>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a class="dropdown-button" data-activates="file_dropdown"   href="{{ route('admin.files.index') }}"><i class="fa fa-file fa-fw"></i> Files</a>--}}
+{{--                            <ul id="file_dropdown" class="dropdown-content">--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route('admin.files.index') }}">All Files</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route( 'admin.files.create' ) }}">Add New File</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a class="dropdown-button" data-activates="tag_dropdown"   href="{{ route('admin.tags.index') }}"><i class="fa fa-tag fa-fw"></i> Tags</a>--}}
+{{--                            <ul id="tag_dropdown" class="dropdown-content">--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route('admin.tags.index') }}">All Tags</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a href="{{ route( 'admin.tags.create' ) }}">Add New Tag</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                         <li>
                             <a class="dropdown-button" data-activates="module_dropdown"   href="{{ route('admin.modules.index') }}"><i class="fa fa-magic fa-fw"></i> Modules</a>
                             <ul id="module_dropdown" class="dropdown-content">

@@ -133,7 +133,7 @@ class tasklistController extends Controller
         $assignees = User::lists('first_name','id');
 
         return view('admin.tasklist.edit',compact( 'tasklist', 'statuses', 'projects',
-            'modules','assignees','project_id','tasklists'));
+            'modules','assignees'/*,'project_id'*/,'tasklists'));
     }
 
     /**

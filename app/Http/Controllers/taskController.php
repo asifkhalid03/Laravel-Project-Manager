@@ -159,8 +159,8 @@ class taskController extends Controller
         $tasks = array('') + Task::lists('title','id')->toArray();
         $assignees = User::lists('first_name','id');
 
-        return view('admin.task.edit',compact( 'task', 'tasklist', 'statuses', 'projects',
-            'modules','assignees','project_id','tasklists', 'tasks'));
+        return view('admin.task.edit',compact( 'task'/*, 'tasklist'*/, 'statuses', 'projects',
+            'modules','assignees'/*,'project_id'*/,'tasklists', 'tasks'));
     }
 
     /**

@@ -49,9 +49,15 @@ class userController extends Controller
      */
     public function store(createUserRequest $request)
     {
+
+
         if( !current_user_can('can_create_users') ) return view('admin.access_error');
 
+
+
         $request->caps = Role::where('id',$request->role_id)->pluck('caps');
+
+
 
         User::create(
             array(
@@ -63,6 +69,8 @@ class userController extends Controller
                 'caps' => json_encode( $request->get('caps') )
             )
         )->roles()->sync($request->role_id);
+
+
         return redirect()->route('admin.users.index');
     }
 
